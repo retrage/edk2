@@ -457,7 +457,6 @@ SendError (
  Send 'OK' when the function is done executing successfully.
  **/
 VOID
-EFIAPI
 SendSuccess (
   VOID
   )
@@ -470,7 +469,6 @@ SendSuccess (
  Send empty packet to specify that particular command/functionality is not supported.
  **/
 VOID
-EFIAPI
 SendNotSupported (
   VOID
   )
@@ -602,7 +600,6 @@ ConvertEFItoGDBtype (
  **/
 
 VOID
-EFIAPI
 ReadFromMemory (
   CHAR8 *PacketData
   )
@@ -649,7 +646,6 @@ ReadFromMemory (
  the input buffer.
  **/
 VOID
-EFIAPI
 WriteToMemory (
   IN CHAR8 *PacketData
   )

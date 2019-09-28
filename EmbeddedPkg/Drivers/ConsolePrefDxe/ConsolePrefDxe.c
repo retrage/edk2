@@ -173,6 +173,7 @@ RemoveSpcrTable (
 }
 
 STATIC
+EFIAPI
 VOID
 EFIAPI
 OnReadyToBoot (

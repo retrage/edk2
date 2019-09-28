@@ -186,7 +186,6 @@ ReadNthRegister (
  @param   SystemContext     Register content at time of the exception
  **/
 VOID
-EFIAPI
 ReadGeneralRegisters (
   IN  EFI_SYSTEM_CONTEXT      SystemContext
   )
@@ -257,7 +256,6 @@ BasicWriteRegister (
  @param   InBuffer      Pointer to the input buffer received from gdb server
  **/
 VOID
-EFIAPI
 WriteNthRegister (
   IN  EFI_SYSTEM_CONTEXT      SystemContext,
   IN  CHAR8           *InBuffer
@@ -295,7 +293,6 @@ WriteNthRegister (
  @param   InBuffer          Pointer to the input buffer received from gdb server
  **/
 VOID
-EFIAPI
 WriteGeneralRegisters (
   IN  EFI_SYSTEM_CONTEXT    SystemContext,
   IN  CHAR8                 *InBuffer
@@ -361,7 +358,6 @@ RemoveSingleStep (
  @param   SystemContext     Register content at time of the exception
  **/
 VOID
-EFIAPI
 ContinueAtAddress (
   IN  EFI_SYSTEM_CONTEXT      SystemContext,
   IN    CHAR8                 *PacketData
@@ -380,7 +376,6 @@ ContinueAtAddress (
  @param   SystemContext     Register content at time of the exception
  **/
 VOID
-EFIAPI
 SingleStep (
   IN  EFI_SYSTEM_CONTEXT      SystemContext,
   IN    CHAR8                 *PacketData
